@@ -5,7 +5,7 @@ spring:
   profiles: default
   datasource:
     url: jdbc:mysql://localhost:3306/UserSOA
-    username: root
+    username: user
     password: root
     useSSL: false
     driver-class-name: com.mysql.jdbc.Driver
