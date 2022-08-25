@@ -22,7 +22,6 @@ eureka:
     hostname: user-service
     nonSecurePortEnabled: true
     nonSecurePort: 8001
-    homePageUrl: http://${eureka.instance.hostname}/
   client:
     registerWithEureka: true
     fetchRegistry: true
