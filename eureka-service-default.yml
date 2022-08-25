@@ -3,6 +3,7 @@ server:
 eureka:
   instance:
     hostname: eureka-service
+    nonSecurePortEnabled: true
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
