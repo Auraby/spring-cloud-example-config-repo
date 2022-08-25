@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: config-service
+    hostname: eureka-service
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
