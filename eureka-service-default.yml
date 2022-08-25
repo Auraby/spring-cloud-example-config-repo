@@ -3,11 +3,11 @@ server:
 
 eureka:
   instance:
-    hostname: eureka-service
+    hostname: eureka-service.test.svc
     nonSecurePortEnabled: true
     nonSecurePort: 8761
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
     service-url:
-      defaultZone: http://eureka-service:8761/eureka/
+      defaultZone: http://eureka-service.test.svc:8761/eureka/
