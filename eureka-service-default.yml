@@ -1,13 +1,13 @@
+server:
+  port: 8761
+
 eureka:
   instance:
-    hostname: eureka-service.test.svc
+    hostname: eureka-service
     nonSecurePortEnabled: true
     nonSecurePort: 8761
-    homePageUrl: http://${eureka.instance.hostname}/
-    statusPageUrl: http://${eureka.instance.hostname}/actuator/info/
-    healthCheckUrl: http://${eureka.instance.hostname}/actuator/health/
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}/eureka/
+      defaultZone: http://eureka-service:8761/eureka/
