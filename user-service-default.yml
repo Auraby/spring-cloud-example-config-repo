@@ -16,3 +16,13 @@ spring:
       useSSL: false
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
       dialect: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  instance:
+    nonSecurePortEnabled: true
+    nonSecurePort: 8761
+    hostname: eureka-service.test.svc
+    homePageUrl: http://${eureka.instance.hostname}/
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
