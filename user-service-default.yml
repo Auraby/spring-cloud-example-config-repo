@@ -1,5 +1,5 @@
-#server:
-#  port: 8001
+server:
+ port: 8001
 
 spring:
   profiles: default
@@ -17,13 +17,13 @@ spring:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
       dialect: org.hibernate.dialect.MySQL8Dialect
 
-eureka:
-  instance:
-    hostname: user-service
-    nonSecurePortEnabled: true
-    nonSecurePort: 8001
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    service-url:
-      defaultZone: http://eureka-service.test.svc/eureka/
+# eureka:
+#   instance:
+#     hostname: user-service
+#     nonSecurePortEnabled: true
+#     nonSecurePort: 8001
+#   client:
+#     registerWithEureka: true
+#     fetchRegistry: true
+#     service-url:
+#       defaultZone: http://eureka-service.test.svc/eureka/
